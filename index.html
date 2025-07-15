@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ibit - Developer</title>
+    <link rel="canonical" href="https://ibit.dev/" />
+    <meta name="author" content="ibit" />
+    <meta name="description" content="ibitのホームページ" />
+    <meta name="keywords" content="ibit,あいびっと,Web開発" />
+
+    <!-- ファビコン -->
+    <link rel="icon" type="image/x-icon" href="src/img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicons/favicon.png" />
+
+    <!-- CSSとフォント -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome（SNSアイコン用） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" />
+
+    <!-- JavaScript -->
+    <script src="src/js/script.js" defer></script>
+    </head>
+
+    <body>
+    <!-- ナビゲーション -->
+    <header>
+        <nav class="navbar fixed">
+        <div class="nav-container">
+            <div class="nav-logo">ibit.dev</div>
+            <ul class="nav-menu">
+            <li><a href="https://ibit.dev/index.html">Home</a></li>
+            <li><a href="https://ibit.dev/about.html">About</a></li>
+            <li><a href="https://ibit.dev/portfolio.html">Portfolio</a></li>
+            <li><a href="https://ibit.dev/blog.html">Blog</a></li>
+            <li><a href="https://ibit.dev/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Heroセクション（左右分割） -->
+    <section class="hero">
+        <div class="hero-container">
+        <!-- 左：挨拶と自己紹介 -->
+        <div class="hero-left">
+            <p id="greeting" class="greeting"></p>
+            <h1 id="typewriter" class="typewriter">I'm ibit</h1>
+            <p class="subtext">I'm Web Developer from Tokyo, Japan.</p>
+        </div>
+
+        <!-- 右：プロフィールアイコン -->
+        <div class="hero-right">
+            <img src="src/img/ibit.jpeg" alt="ibit icon" class="profile-icon" />
+        </div>
+        </div>
+
+        <!-- SNSボタン -->
+        <div class="social-bar">
+        <a href="https://x.com/ibit" class="social-btn x" title="X(formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://github.com/ibit" class="social-btn github" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@ibit-xyz" class="social-btn yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.com/ibit" class="social-btn discord" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://keybase.io/ibit" class="social-btn keybase" title="Keybase"><i class="fab fa-keybase"></i></a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="footer-container">
+        <p>&copy; 2025 ibit.dev. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/terms.html" title="Terms of Service">Terms</a>
+            <span class="separator">｜</span>
+            <a href="/privacy.html" title="Privacy Policy">Privacy</a>
+        </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
