@@ -1,0 +1,113 @@
+/* ハンバーガーメニューのアニメーション付き・コメントは消さずに残す */
+
+.hamburger {
+  display: none;
+  /* ナビゲーション右上に常に配置、z-index最大 */
+  position: fixed; /* ← ここをabsolute→fixedに修正！ */
+  right: 24px;
+  top: 24px;
+  /* top: 50%; transform: translateY(-50%); ← これだと画面上端に重なりやすいので明示的に上端固定 */
+  width: 50px;
+  height: 38px;
+  z-index: 3001; /* メニュー/オーバーレイより高い */
+  cursor: pointer;
+  transition: .5s;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 6px;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+#nav-icon3 span:nth-child(1) { top: 0; }
+#nav-icon3 span:nth-child(2) { top: 16px; }
+#nav-icon3 span:nth-child(3) { top: 32px; }
+
+/* ハンバーガー→バツ印へのアニメーション */
+#nav-icon3.open span:nth-child(1) {
+  top: 16px;
+  transform: rotate(45deg);
+}
+#nav-icon3.open span:nth-child(2) {
+  opacity: 0;
+  left: 100%;
+}
+#nav-icon3.open span:nth-child(3) {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+
+/* オーバーレイ（メニュー展開時の背景） */
+.menu-overlay {
+  display: none;
+}
+.menu-overlay.active {
+  display: block;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.75);
+  z-index: 2200;
+  transition: opacity 0.3s;
+}
+
+/* 全画面スライドメニュー */
+.fullscreen-menu {
+  display: none;
+}
+.fullscreen-menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #ff5800;
+  z-index: 2300;
+  animation: slide-in 0.3s cubic-bezier(.4,2,.6,1);
+}
+@keyframes slide-in {
+  from { transform: translateX(100vw);}
+  to { transform: translateX(0);}
+}
+
+.fullscreen-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fullscreen-menu li {
+  margin: 40px 0;
+}
+.fullscreen-menu a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+}
+.fullscreen-menu a:hover {
+  color: #00ffd5;
+}
+
+/* レスポンシブでハンバーガー・メニュー切替 */
+@media (max-width: 768px) {
+  .nav-container {
+    position: static;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-menu {
+    display: none !important;
+  }
+}
