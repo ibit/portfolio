@@ -27,3 +27,17 @@ function getGreeting() {
         return "Hello there!";
     }
 }
+
+//hidden feature
+let inputBuffer = '';
+
+document.addEventListener('keydown', (e) => {
+    inputBuffer += e.key.toLowerCase();
+    if (inputBuffer.length > 10) inputBuffer = inputBuffer.slice(-10); 
+
+    if (inputBuffer.includes('ibit')) {
+        alert('Hello. What\'s up?');
+        inputBuffer = '';
+    }
+});
+
