@@ -41,3 +41,4 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+console.log('%cWhat are you doing?','color:red;font-size:20px')
