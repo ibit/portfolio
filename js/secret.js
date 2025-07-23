@@ -1,3 +1,15 @@
+// console message
+let inputBuffer = '';
+document.addEventListener('keydown', (e) => {
+    inputBuffer += e.key.toLowerCase();
+    if (inputBuffer.length > 10) inputBuffer = inputBuffer.slice(-10); 
+
+    if (inputBuffer.includes('ibit')) {
+        alert('Hello. What\'s up?');
+        inputBuffer = '';
+    }
+});
+
 // Help
 window.help = () => {
     console.clear();
@@ -16,6 +28,7 @@ window.help = () => {
         console.log(`%c${paddedCommand} : %c${description}`, 'color: white; font-weight: bold;', 'color: lightgray; font-weight: normal;');
     });
 };
+
 
 
 // Hamburger menu
@@ -40,6 +53,7 @@ const maxLabelLength = Math.max(...links.map(l => l.label.length));
     console.log(`%c${paddedLabel} : %c${url}`, 'color: yellow; font-weight: bold;', 'color: lightblue; text-decoration: underline;');
     });
 };
+
 
 
 // Information 

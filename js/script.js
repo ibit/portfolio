@@ -1,15 +1,8 @@
-//hidden feature
-let inputBuffer = '';
-
-document.addEventListener('keydown', (e) => {
-    inputBuffer += e.key.toLowerCase();
-    if (inputBuffer.length > 10) inputBuffer = inputBuffer.slice(-10); 
-
-    if (inputBuffer.includes('ibit')) {
-        alert('Hello. What\'s up?');
-        inputBuffer = '';
-    }
-});
-
 // console message
 console.log('%c🚀 Welcome to the console of ibit.dev!', 'color: cyan; background: black; font-size: 20px; padding: 6px; border-radius: 4px');
+
+//clear console
+window.clear = () => {
+    console.clear();
+    console.log('%c🧹 Console cleared!', 'color: cyan; font-weight: bold; font-size: 18px; padding: 4px 0;');
+};
