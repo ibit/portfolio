@@ -26,7 +26,6 @@ main {
 }
 
 main.left {
-    height: auto;
     display: block;
     justify-content: unset;
     align-items: unset;
