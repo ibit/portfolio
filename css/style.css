@@ -270,10 +270,15 @@ main.left {
         padding: 1rem 0.5rem;
     }
 
+    .copyright {
+        order: 1; /* モバイルビューでcopyrightをfooter-navの下に移動 */
+    }
+
     .footer-nav {
-        flex-direction: row;
+        display: flex;
         justify-content: center;
         gap: 0.5rem;
         width: 100%;
+        order: 0; /* モバイルビューでfooter-navをcopyrightの上に配置 */
     }
 }
