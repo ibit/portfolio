@@ -21,7 +21,8 @@ This website is built using:
 
 ## 📸 Screenshots
 
-Coming soon...
+![ibit.dev](https://github.com/ibit/website/blob/main/img/screenshot_home.png)
+
 
 ## 👤 Author
 
