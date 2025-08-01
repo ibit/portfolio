@@ -216,6 +216,63 @@ main.left {
     color: #555;
 }
 
+/* Contact section */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* 横並びにする */
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* アイコン間のスペース */
+}
+
+.contact-list li {
+    margin-bottom: 0; /* 縦方向のスペースを削除 */
+}
+
+.contact-list i {
+    margin-right: 10px;
+}
+
+/* アイコンの色を変更 */
+.contact-list li:nth-child(1) i {
+    color: #ffffff; /* メールアイコンの色 */
+}
+
+.contact-list li:nth-child(2) i {
+    color: #019bfb; /* Twitterアイコンの色 */
+}
+
+.contact-list li:nth-child(3) i {
+    color: #333; /* GitHubアイコンの色 */
+}
+
+.contact-list a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em; /* 文字サイズを大きくする */
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
 /* --- スマホ表示用レスポンシブ調整 --- */
 @media (max-width: 768px) {
     .hero-container {
