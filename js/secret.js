@@ -42,6 +42,7 @@ const links = [
     { label: '🧩 Portfolio', url: 'https://ibit.dev/portfolio' },
     { label: '📝 Blog', url: 'https://ibit.dev/blog' },
     { label: '📞 Contact', url: 'https://ibit.dev/contact' },
+    { label: '🔗 Share', url: 'https://ibit.dev/share' },
     { label: '⚖️ Terms', url: 'https://ibit.dev/terms' },
     { label: '🔒 Privacy', url: 'https://ibit.dev/privacy' }
     ];
