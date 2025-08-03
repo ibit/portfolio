@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ibit - Contact</title>
 
     <!-- Favicon -->
@@ -19,54 +19,62 @@
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
     <script src="js/secret.js" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <nav class="navbar fixed">
-            <div class="nav-container">
-                <div class="nav-logo">ibit.dev</div>
-                <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav class="navbar fixed">
+        <div class="nav-container">
+        <div class="nav-logo">ibit.dev</div>
+        <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
     </header>
 
+    <!-- Main -->
     <main>
-        <div class="contact-container">
-            <h1>Contact Us</h1>
-            <p>ご質問やお問い合わせは、以下の方法でご連絡ください。</p>
-            <ul class="contact-list">
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:contact@ibit.dev" title="Mail" target="_blank">contact@ibit.dev</a>
-                </li>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                    <a href="https://x.com/messages/compose?recipient_id=21089269" title="X" target="_blank">@ibit</a>
-                </li>
-                <li>
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/ibit" title="GitHub" target="_blank">@ibit</a>
-                </li>
-            </ul>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>ご質問やお問い合わせは、以下の方法でご連絡ください。</p>
+        <ul class="contact-list">
+        <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@ibit.dev" title="Mail" target="_blank">contact@ibit.dev</a>
+        </li>
+        <li>
+            <i class="fab fa-twitter"></i>
+            <a href="https://x.com/messages/compose?recipient_id=21089269" title="X" target="_blank">@ibit</a>
+        </li>
+        <li>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/ibit" title="GitHub" target="_blank">@ibit</a>
+        </li>
+        </ul>
+
+        <!-- Cloudflare Turnstile -->
+        <div style="margin-top: 2rem;">
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAABnmyDAhzZQncLOh"></div>
         </div>
+    </div>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <p class="copyright">&copy; 2025 ibit.dev. All rights reserved.</p>
-            <nav class="footer-nav">
-                <a href="/terms" title="Terms of Service">Terms</a>
-                <span class="separator">｜</span>
-                <a href="/privacy" title="Privacy Policy">Privacy</a>
-            </nav>
-        </div>
-    </footer>
+    <div class="footer-container">
+        <p class="copyright">&copy; 2025 ibit.dev. All rights reserved.</p>
+        <nav class="footer-nav">
+        <a href="/terms" title="Terms of Service">Terms</a>
+        <span class="separator">｜</span>
+        <a href="/privacy" title="Privacy Policy">Privacy</a>
+        </nav>
+    </div>
+    </footer> 
+</body>
 </html>
