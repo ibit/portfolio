@@ -40,10 +40,12 @@
 
     <!-- Main -->
     <main>
-    <div class="contact-container">
+        <div class="contact-container">
         <h1>Contact Us</h1>
         <p>ご質問やお問い合わせは、以下の方法でご連絡ください。</p>
-        <ul class="contact-list">
+
+    <!-- Contact List: 初期は非表示 -->
+    <ul class="contact-list" style="display: none;">
         <li>
             <i class="fas fa-envelope"></i>
             <a href="mailto:contact@ibit.dev" title="Mail" target="_blank">contact@ibit.dev</a>
@@ -56,14 +58,17 @@
             <i class="fab fa-github"></i>
             <a href="https://github.com/ibit" title="GitHub" target="_blank">@ibit</a>
         </li>
-        </ul>
+    </ul>
 
-        <!-- Cloudflare Turnstile -->
-        <div style="margin-top: 2rem;">
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAABnmyDAhzZQncLOh"></div>
+    <!-- Turnstile に callback 設定 -->
+    <div style="margin-top: 2rem;">
+        <div class="cf-turnstile"
+            data-sitekey="0x4AAAAAABnmyDAhzZQncLOh"
+            data-callback="onTurnstileSuccess">
         </div>
     </div>
-    </main>
+</main>
+
 
     <!-- Footer -->
     <footer class="site-footer">
