@@ -6,3 +6,11 @@ window.clear = () => {
     console.clear();
     console.log('%c🧹 Console cleared!', 'color: #0be804ff; font-weight: bold; font-size: 18px; padding: 4px 0;');
 };
+
+function onTurnstileSuccess(token) {
+  // Turnstile成功時に実行される
+  const contactList = document.querySelector('.contact-list');
+  if (contactList) {
+    contactList.style.display = 'block';
+  }
+}
