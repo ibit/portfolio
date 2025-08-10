@@ -34,10 +34,10 @@
 
 <details><summary>その他のページ</summary>
 <ul>
-  <li><a href="https://ibit.dev/share">Share</a></li>
-  <li><a href="https://ibit.dev/terms">Terms of service</a></li>
-  <li><a href="https://ibit.dev/privacy">Privacy Policy</a></li>
-  <li><a href="https://ibit.dev/404">404 Not Found</a></li>
+  <li><a href="https://ibit.dev/share">🔗Share</a></li>
+  <li><a href="https://ibit.dev/terms">⚖️Terms of service</a></li>
+  <li><a href="https://ibit.dev/privacy">🔒Privacy Policy</a></li>
+  <li><a href="https://ibit.dev/404">❌404 Not Found</a></li>
 </ul>
 </details>
 
